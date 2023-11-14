@@ -21,7 +21,7 @@
             Light:  css/skeleton-light.css
             Dark:   css/skeleton-dark.css
      -->
-    <link rel="stylesheet" href="css/skeleton-auto.css" />
+    <link rel="stylesheet" href="css/skeleton-light.css" />
 
     <!-- Brand Styles -->
     <link rel="stylesheet" href="css/brands.css" />
@@ -67,7 +67,12 @@
           <h1 role="heading">Micro Startup</h1>
 
           <!-- Short Bio -->
-          <p>A global community of builders, founders, and creators.</p>
+          <p>A global community of builders, founders, and creators. 🚀</p>
+
+          <p>
+            Whether you build a passive income or a global enterprise we all
+            have to start somewhere.
+          </p>
 
           <!--
 
@@ -181,7 +186,17 @@
             target="_blank"
             rel="noopener"
             role="button"
-            ><img class="icon" src="images/icons/reddit.svg" alt="" />Reddit</a
+            ><img class="icon" src="images/icons/reddit.svg" alt="" />Reddit -
+            Bootstrappers</a
+          ><br />
+          <a
+            class="button button-reddit"
+            href="#"
+            target="_blank"
+            rel="noopener"
+            role="button"
+            ><img class="icon" src="images/icons/reddit.svg" alt="" />Reddit -
+            MicroSaaS</a
           ><br />
 
           <!-- X -->
@@ -195,13 +210,47 @@
           ><br />
 
           <br />
+
+          <!-- Newsletter signup -->
+          <iframe
+            data-tally-src="https://tally.so/embed/3Ex5kB?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy"
+            width="100%"
+            height="219"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Newsletter sign-up"
+          ></iframe>
+          <script>
+            var d = document,
+              w = "https://tally.so/widgets/embed.js",
+              v = function () {
+                "undefined" != typeof Tally
+                  ? Tally.loadEmbeds()
+                  : d
+                      .querySelectorAll("iframe[data-tally-src]:not([src])")
+                      .forEach(function (e) {
+                        e.src = e.dataset.tallySrc;
+                      });
+              };
+            if ("undefined" != typeof Tally) v();
+            else if (d.querySelector('script[src="' + w + '"]') == null) {
+              var s = d.createElement("script");
+              (s.src = w),
+                (s.onload = v),
+                (s.onerror = v),
+                d.body.appendChild(s);
+            }
+          </script>
+
           <!-- 
             Footer:
             This includes a link to privacy.html page which can be setup for your Privacy Policy.
             This also includes a link to the LittleLink repository to make forking LittleLink easier.
             You can edit or remove anything here to make your own footer.
         -->
-          <p>
+          <!-- <p>
             <a href="privacy.html">Privacy Policy</a> | Build your own by
             forking
             <a
@@ -211,7 +260,7 @@
               role="button"
               >LittleLink</a
             >.
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
